@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-  <title>DataTable Sample</title>
+@extends('layouts.master')
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-</head>
-<body>
+@section('content')
 <div class="container">
   <div class="row m-5">
     <button id="btn-filter" class="btn btn-primary">Filter</button>
@@ -42,8 +32,10 @@
     </div>
   </div>
 </div>
+@endsection
 
-<script src="{{ mix('js/app.js') }}"></script>
+@section('script')
+{{-- <script src="{{ mix('js/app.js') }}"></script> --}}
 <script>
     $(document).ready(function () {
       fetch_data();
@@ -81,5 +73,4 @@
         });
     });
 </script>
-</body>
-</html>
+@endsection

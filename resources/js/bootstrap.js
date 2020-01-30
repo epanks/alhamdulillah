@@ -12,6 +12,7 @@ try {
     window.JSZip = require('jszip');
 
     require('bootstrap');
+    require('admin-lte');
     require('datatables.net-bs4');
     require('datatables.net-buttons/js/dataTables.buttons');
     require('datatables.net-buttons/js/buttons.flash');
