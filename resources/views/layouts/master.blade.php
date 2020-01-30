@@ -172,9 +172,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/paketexcel" class="nav-link">
+                <a href="/paket-filter" class="nav-link">
                   <i class="nav-icon fas fa-list-alt blue"></i>
-                  <p>Paket Excel</p>
+                  <p>Paket Filter</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/paket-filter2" class="nav-link">
+                  <i class="nav-icon fas fa-list-alt blue"></i>
+                  <p>Paket Filter2</p>
                 </a>
               </li>
               <li class="nav-item">
