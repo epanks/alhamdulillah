@@ -13,7 +13,9 @@
           <th>Keuangan</th>
           <th>Progres Fisik</th>
         </tr>
-        </thead>        
+        </thead>
+        <tbody>
+        </tbody>        
       </table>
     </div>
   </div>
@@ -29,12 +31,12 @@
         serverside: true,
         ajax: '{{ url('paket.filter2') }}',
         columns: [
-          { data: 'id', name: 'id' },
-          { data: 'nmpaket', name: 'nmpaket' },
-          { data: 'pagurmp', name: 'pagurmp' },
-          { data: 'keuangan', name: 'keuangan' },
-          { data: 'progres_fisik', name: 'progres_fisik' }
-        ]
+          { data: 'id' },
+          { data: 'nmpaket' },
+          { data: 'pagurmp' },
+          { data: 'keuangan' },
+          { data: 'progres_fisik' }
+        ],
       });
     });
 </script>

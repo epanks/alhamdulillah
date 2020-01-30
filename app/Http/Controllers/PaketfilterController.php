@@ -21,7 +21,7 @@ class PaketfilterController extends Controller
 
     public function getPaket()
     {
-        return Datatables::of(Paket::query())->make(true);
+        return datatables(Paket::select('id','nmpaket','pagurmp','keuangan','progres_fisik'))->toJson();
     }
 
     /**
