@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/paket-list', 'PaketController@index')->name('paket-list');
+Route::get('paket/query', 'PaketController@query')->name('paket.query');
+
+//export
+Route::get('paket/export/', 'PaketController@export')->name('paket.download');
